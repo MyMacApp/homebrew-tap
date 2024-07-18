@@ -13,7 +13,8 @@ class CursorToggleApp < Formula
   end
 
   def post_install
-    system "osascript", "-e", 'tell application "System Events" to make new login item at end with properties {path:"/usr/local/bin/CursorToggleApp", hidden:false}'
+    plist_path.write plist
+    system "launchctl", "load", "-w", plist_path
   end
 
   def plist
