@@ -2,7 +2,7 @@ class CursorToggleApp < Formula
   desc "Toggle cursor visibility from the toolbar"
   homepage "https://github.com/MyMacApp/cursor-toggle-app"
   url "https://github.com/MyMacApp/cursor-toggle-app/archive/v1.0.tar.gz"
-  sha256 "0dc04d69df647738cccb299e0fc56eae067bafcd072679a6c9cff70b33149bec"
+  sha256 "9a04188e5d099f6c8d4d6c17c69426ca2b267cc917720f43fec14e1534c852b0"
   license "MIT"
 
   depends_on xcode: ["11.0", :build]
