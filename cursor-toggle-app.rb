@@ -16,8 +16,6 @@ class CursorToggleApp < Formula
     system "osascript", "-e", 'tell application "System Events" to make new login item at end with properties {path:"/usr/local/bin/CursorToggleApp", hidden:false}'
   end
 
-  plist_options startup: true
-
   def plist
     <<~EOS
       <?xml version="1.0" encoding="UTF-8"?>
@@ -25,7 +23,7 @@ class CursorToggleApp < Formula
       <plist version="1.0">
       <dict>
         <key>Label</key>
-        <string>com.yourusername.cursor-toggle-app</string>
+        <string>com.tokitake.cursor-toggle-app</string>
         <key>ProgramArguments</key>
         <array>
           <string>/usr/local/bin/CursorToggleApp</string>
